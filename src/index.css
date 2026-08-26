@@ -688,6 +688,20 @@ h1 {
   font-size: 0.9rem;
 }
 
+.job-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.job-location .icon {
+  width: 13px;
+  height: 13px;
+}
+
 .timeline .summary {
   margin-top: 8px;
   max-width: 52ch;

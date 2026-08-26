@@ -50,6 +50,7 @@
     {
       "role": "Senior Software Engineer",
       "company": "Tech Corp",
+      "location": "San Francisco, CA",
       "start": "2020",
       "end": "Present",
       "summary": "Led development of microservices architecture, 40% improvement in system performance"
@@ -57,6 +58,7 @@
     {
       "role": "Software Engineer",
       "company": "Innovation Labs",
+      "location": "Austin, TX",
       "start": "2017",
       "end": "2020",
       "summary": "Architected cloud-native applications, mentored junior developers"
@@ -64,6 +66,7 @@
     {
       "role": "Full Stack Developer",
       "company": "StartUp Inc",
+      "location": "New York, NY",
       "start": "2015",
       "end": "2017",
       "summary": "Built scalable web applications using React and Node.js"

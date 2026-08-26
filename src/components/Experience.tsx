@@ -1,5 +1,5 @@
 import type { ExperienceItem } from '../types/portfolio'
-import { BriefcaseIcon } from './Icons'
+import { BriefcaseIcon, PinIcon } from './Icons'
 
 type ExperienceProps = {
   label: string
@@ -23,6 +23,10 @@ export function Experience({ label, items }: ExperienceProps) {
               </p>
             </div>
             <p className="company">{item.company}</p>
+            <p className="job-location">
+              <PinIcon className="icon" />
+              {item.location}
+            </p>
             <p className="summary">{item.summary}</p>
           </li>
         ))}

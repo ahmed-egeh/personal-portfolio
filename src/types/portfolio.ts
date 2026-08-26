@@ -28,6 +28,7 @@ export type SkillGroup = {
 export type ExperienceItem = {
   role: string
   company: string
+  location: string
   start: string
   end: string
   summary: string
