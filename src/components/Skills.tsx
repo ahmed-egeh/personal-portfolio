@@ -1,6 +1,7 @@
 import type { CSSProperties } from 'react'
 import type { SkillGroup } from '../types/portfolio'
 import { CloudIcon, CodeIcon, LayersIcon, ServerIcon } from './Icons'
+import { skillIconFor } from './SkillIcons'
 
 const skillIcons = {
   code: CodeIcon,
@@ -34,14 +35,18 @@ export function Skills({ label, groups }: SkillsProps) {
                 {group.label}
               </h3>
               <ul className="chips">
-                {group.items.map((item, chipIndex) => (
-                  <li
-                    key={item}
-                    style={{ '--chip-i': chipIndex } as CSSProperties}
-                  >
-                    {item}
-                  </li>
-                ))}
+                {group.items.map((item, chipIndex) => {
+                  const ChipIcon = skillIconFor(item)
+                  return (
+                    <li
+                      key={item}
+                      style={{ '--chip-i': chipIndex } as CSSProperties}
+                    >
+                      {ChipIcon ? <ChipIcon className="icon" /> : null}
+                      {item}
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           )

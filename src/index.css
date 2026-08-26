@@ -600,6 +600,9 @@ h1 {
 }
 
 .chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 6px 13px;
   border: 1px solid var(--chip-border);
   border-radius: 999px;
@@ -611,6 +614,12 @@ h1 {
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
+}
+
+.skill-group .chips li .icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
 }
 
 .skill-group .chips li {
