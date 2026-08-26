@@ -16,7 +16,7 @@ export function Skills({ label, groups }: SkillsProps) {
   return (
     <section className="section" aria-labelledby="skills-heading">
       <h2 id="skills-heading">
-        <LayersIcon className="icon icon-color" />
+        <LayersIcon className="icon" />
         {label}
       </h2>
       <div className="skill-groups">

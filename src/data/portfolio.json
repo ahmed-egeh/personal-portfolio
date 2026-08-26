@@ -22,6 +22,11 @@
     "intro": {
       "src": "/media/intro.mp4",
       "label": "Meet Me"
+    },
+    "cv": {
+      "src": "/cv.pdf",
+      "label": "Download resume",
+      "filename": "John-Doe-CV.pdf"
     }
   },
   "skillGroups": [

@@ -12,6 +12,11 @@ export type Profile = {
     src: string
     label: string
   }
+  cv: {
+    src: string
+    label: string
+    filename: string
+  }
 }
 
 export type SkillGroup = {

@@ -110,10 +110,30 @@ export function VideoIcon({ className }: IconProps) {
   )
 }
 
+export function ExternalLinkIcon({ className }: IconProps) {
+  return (
+    <StrokeIcon className={className}>
+      <path d="M14 5h5v5" />
+      <path d="M12 12 19 5" />
+      <path d="M17 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h5" />
+    </StrokeIcon>
+  )
+}
+
+export function DownloadIcon({ className }: IconProps) {
+  return (
+    <StrokeIcon className={className}>
+      <path d="M12 4v10" />
+      <path d="m8 10 4 4 4-4" />
+      <path d="M5 18h14" />
+    </StrokeIcon>
+  )
+}
+
 export function BriefcaseIcon({ className }: IconProps) {
   return (
-    <StrokeIcon className={className} stroke="#fbbf24">
-      <rect x="3" y="8" width="18" height="12" rx="2" fill="#fbbf24" fillOpacity="0.18" />
+    <StrokeIcon className={className}>
+      <rect x="3" y="8" width="18" height="12" rx="2" />
       <path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
     </StrokeIcon>
   )
@@ -121,44 +141,19 @@ export function BriefcaseIcon({ className }: IconProps) {
 
 export function FolderIcon({ className }: IconProps) {
   return (
-    <StrokeIcon className={className} stroke="#fb7185">
-      <path
-        d="M3 7.5A2.5 2.5 0 0 1 5.5 5H9l2 2.5h7.5A2.5 2.5 0 0 1 21 10v7.5a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z"
-        fill="#fb7185"
-        fillOpacity="0.18"
-      />
+    <StrokeIcon className={className}>
+      <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H9l2 2.5h7.5A2.5 2.5 0 0 1 21 10v7.5a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z" />
     </StrokeIcon>
   )
 }
 
 export function LayersIcon({ className }: IconProps) {
   return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <path
-        d="m3.5 16.6 8.5 4.2 8.5-4.2"
-        stroke="#38bdf8"
-        strokeWidth="2"
-      />
-      <path
-        d="m3.5 12.4 8.5 4.2 8.5-4.2"
-        stroke="#818cf8"
-        strokeWidth="2"
-      />
-      <path
-        d="m12 3.5-8.5 4.3L12 12l8.5-4.2L12 3.5z"
-        fill="#60a5fa"
-        fillOpacity="0.28"
-        stroke="#60a5fa"
-        strokeWidth="2"
-      />
-    </svg>
+    <StrokeIcon className={className}>
+      <path d="m12 3.5-8.5 4.3L12 12l8.5-4.2L12 3.5z" />
+      <path d="m3.5 12.4 8.5 4.2 8.5-4.2" />
+      <path d="m3.5 16.6 8.5 4.2 8.5-4.2" />
+    </StrokeIcon>
   )
 }
 

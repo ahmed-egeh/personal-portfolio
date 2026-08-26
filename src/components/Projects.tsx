@@ -1,5 +1,5 @@
 import type { Project } from '../types/portfolio'
-import { FolderIcon, GitHubIcon } from './Icons'
+import { ExternalLinkIcon, FolderIcon, GitHubIcon } from './Icons'
 
 type ProjectsProps = {
   label: string
@@ -10,7 +10,7 @@ export function Projects({ label, items }: ProjectsProps) {
   return (
     <section className="section" aria-labelledby="projects-heading">
       <h2 id="projects-heading">
-        <FolderIcon className="icon icon-color" />
+        <FolderIcon className="icon" />
         {label}
       </h2>
       <ul className="project-list">
@@ -38,6 +38,7 @@ export function Projects({ label, items }: ProjectsProps) {
               >
                 <GitHubIcon className="icon" />
                 GitHub
+                <ExternalLinkIcon className="icon icon-ext" />
               </a>
             </div>
           </li>

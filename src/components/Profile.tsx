@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Profile as ProfileData } from '../types/portfolio'
 import {
+  DownloadIcon,
   EnvelopeIcon,
   GitHubIcon,
   LinkedInIcon,
@@ -74,14 +75,24 @@ export function Profile({ profile }: ProfileProps) {
         <p className="role">{profile.title}</p>
         <p className="summary">{profile.summary}</p>
         {stage === 'idle' ? (
-          <button
-            type="button"
-            className="watch-btn"
-            onClick={() => setStage('leaving-info')}
-          >
-            <VideoIcon className="icon" />
-            {profile.intro.label}
-          </button>
+          <div className="profile-actions">
+            <button
+              type="button"
+              className="watch-btn"
+              onClick={() => setStage('leaving-info')}
+            >
+              <VideoIcon className="icon" />
+              {profile.intro.label}
+            </button>
+            <a
+              className="cv-btn"
+              href={profile.cv.src}
+              download={profile.cv.filename}
+            >
+              <DownloadIcon className="icon" />
+              {profile.cv.label}
+            </a>
+          </div>
         ) : null}
         <div className="meta">
           <a className="contact" href={`mailto:${profile.email}`}>
