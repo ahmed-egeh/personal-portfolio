@@ -245,7 +245,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  width: min(100%, 22.5rem);
+  width: min(100%, 26rem);
   margin: 22px auto 0;
 }
 
