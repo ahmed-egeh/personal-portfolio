@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "John Doe — Senior Software Engineer",
+    "description": "15+ years building scalable systems and leading engineering teams"
+  },
+  "sections": {
+    "profile": "Profile",
+    "skills": "Core Skills",
+    "experience": "Experience",
+    "projects": "Personal Projects"
+  },
+  "profile": {
+    "name": "John Doe",
+    "title": "Senior Software Engineer",
+    "summary": "15+ years building scalable systems and leading engineering teams",
+    "email": "john.doe@example.com",
+    "location": "San Francisco, CA",
+    "avatar": "/avatar.svg",
+    "avatarAlt": "Portrait placeholder for John Doe",
+    "github": "https://github.com/",
+    "linkedin": "https://www.linkedin.com/"
+  },
+  "skillGroups": [
+    {
+      "label": "Languages",
+      "icon": "code",
+      "items": ["TypeScript", "Python", "Go"]
+    },
+    {
+      "label": "Backend",
+      "icon": "server",
+      "items": ["Node.js", "PostgreSQL", "Redis"]
+    },
+    {
+      "label": "Cloud",
+      "icon": "cloud",
+      "items": ["AWS", "Kubernetes", "Docker"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Senior Software Engineer",
+      "company": "Tech Corp",
+      "start": "2020",
+      "end": "Present",
+      "summary": "Led development of microservices architecture, 40% improvement in system performance"
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Innovation Labs",
+      "start": "2017",
+      "end": "2020",
+      "summary": "Architected cloud-native applications, mentored junior developers"
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "StartUp Inc",
+      "start": "2015",
+      "end": "2017",
+      "summary": "Built scalable web applications using React and Node.js"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Atlas API",
+      "description": "A small service for exploring public datasets with cached queries and a clean REST surface.",
+      "image": "/projects/atlas.svg",
+      "imageAlt": "Atlas API project preview",
+      "stack": ["TypeScript", "Node.js", "PostgreSQL"],
+      "github": "https://github.com/"
+    },
+    {
+      "title": "Harbor UI",
+      "description": "Component kit and dashboard shell used to prototype internal tools without starting from zero.",
+      "image": "/projects/harbor.svg",
+      "imageAlt": "Harbor UI project preview",
+      "stack": ["React", "TypeScript", "Vite"],
+      "github": "https://github.com/"
+    }
+  ]
+}
