@@ -105,14 +105,100 @@ a:focus-visible {
 }
 
 .page {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(340px, 42%) minmax(0, 1fr);
   align-items: start;
   width: 100%;
 }
 
+.ambient-field {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.ambient-mote {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  color: rgb(3 105 161 / 0.72);
+  font-family: var(--mono);
+  font-size: var(--size);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  white-space: nowrap;
+  text-shadow: 0 0 12px rgb(125 211 252 / 0.45);
+  will-change: transform;
+  animation: mote-a var(--dur) ease-in-out var(--delay) infinite alternate;
+}
+
+.ambient-mote:nth-child(4n + 2) {
+  animation-name: mote-b;
+}
+
+.ambient-mote:nth-child(4n + 3) {
+  animation-name: mote-c;
+}
+
+.ambient-mote:nth-child(4n + 4) {
+  animation-name: mote-d;
+}
+
+.ambient-mote.is-dot {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: rgb(2 132 199 / 0.7);
+  box-shadow: 0 0 8px rgb(14 165 233 / 0.4);
+}
+
+@keyframes mote-a {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(36px, -40px, 0);
+  }
+}
+
+@keyframes mote-b {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-32px, 28px, 0);
+  }
+}
+
+@keyframes mote-c {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(24px, 36px, 0);
+  }
+}
+
+@keyframes mote-d {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-28px, -24px, 0);
+  }
+}
+
 .profile {
   position: sticky;
+  z-index: 3;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -130,6 +216,8 @@ a:focus-visible {
 }
 
 .profile-info {
+  position: relative;
+  z-index: 1;
   width: 100%;
   transition:
     opacity 0.42s ease,
@@ -145,6 +233,12 @@ a:focus-visible {
   filter: blur(8px);
   transform: scale(0.96) translateY(8px);
   pointer-events: none;
+}
+
+.profile.is-loading .ambient-field,
+.profile.is-playing .ambient-field,
+.profile.is-leaving-video .ambient-field {
+  opacity: 0;
 }
 
 .profile-actions {
@@ -805,5 +899,9 @@ h1 {
 
   .intro-bar span {
     width: 100%;
+  }
+
+  .ambient-field {
+    display: none;
   }
 }

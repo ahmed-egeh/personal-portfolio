@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Profile as ProfileData } from '../types/portfolio'
+import { AmbientField } from './AmbientField'
 import {
   DownloadIcon,
   EnvelopeIcon,
@@ -63,6 +64,7 @@ export function Profile({ profile }: ProfileProps) {
 
   return (
     <header className={`section profile is-${stage}`}>
+      <AmbientField />
       <div className="profile-info" aria-hidden={cinema}>
         <img
           className="avatar"
