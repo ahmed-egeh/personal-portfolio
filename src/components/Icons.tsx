@@ -101,6 +101,15 @@ export function CloudIcon({ className }: IconProps) {
   )
 }
 
+export function VideoIcon({ className }: IconProps) {
+  return (
+    <StrokeIcon className={className}>
+      <rect x="2" y="6" width="14" height="12" rx="2" />
+      <path d="m16 10 6-3v10l-6-3z" />
+    </StrokeIcon>
+  )
+}
+
 export function BriefcaseIcon({ className }: IconProps) {
   return (
     <StrokeIcon className={className} stroke="#fbbf24">

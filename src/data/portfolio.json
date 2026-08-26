@@ -18,7 +18,11 @@
     "avatar": "/avatar.svg",
     "avatarAlt": "Portrait placeholder for John Doe",
     "github": "https://github.com/",
-    "linkedin": "https://www.linkedin.com/"
+    "linkedin": "https://www.linkedin.com/",
+    "intro": {
+      "src": "/media/intro.mp4",
+      "label": "Meet Me"
+    }
   },
   "skillGroups": [
     {

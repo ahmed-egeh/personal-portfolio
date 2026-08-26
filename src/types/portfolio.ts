@@ -8,6 +8,10 @@ export type Profile = {
   avatarAlt: string
   github: string
   linkedin: string
+  intro: {
+    src: string
+    label: string
+  }
 }
 
 export type SkillGroup = {
