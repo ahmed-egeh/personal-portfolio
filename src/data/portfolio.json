@@ -24,9 +24,9 @@
       "label": "Watch My Intro"
     },
     "cv": {
-      "src": "/cv.pdf",
+      "src": "/Ahmed_Egeh_resume.pdf",
       "label": "Download resume",
-      "filename": "John-Doe-CV.pdf"
+      "filename": "Ahmed_Egeh_resume.pdf"
     }
   },
   "skillGroups": [
