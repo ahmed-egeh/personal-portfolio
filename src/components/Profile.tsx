@@ -99,13 +99,15 @@ export function Profile({ profile }: ProfileProps) {
     <header id="profile" className={`section profile is-${stage}`}>
       <AmbientField />
       <div className="profile-info" aria-hidden={cinema}>
-        <img
-          className="avatar"
-          src={profile.avatar}
-          alt={profile.avatarAlt}
-          width={124}
-          height={124}
-        />
+        <div className="avatar-wrap">
+          <img
+            className="avatar"
+            src={profile.avatar}
+            alt={profile.avatarAlt}
+            width={184}
+            height={184}
+          />
+        </div>
         <h1>{profile.name}</h1>
         <p className="role">{profile.title}</p>
         <p className="summary">{profile.summary}</p>
