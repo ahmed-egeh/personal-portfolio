@@ -233,6 +233,228 @@ export function MongoIcon({ className }: IconProps) {
   )
 }
 
+export function SymfonyIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#000" />
+      <path
+        fill="#fff"
+        d="M7.2 8.2c1.4-1.2 3.2-1.8 5.1-1.6 2.4.2 4.2 1.6 4.4 3.6.2 1.8-1 3.2-3.2 3.8l2.3 3.8h-2.2l-2-3.4H9.4V18H7.2zm2.2 2v2.4h2.2c1.2 0 1.9-.5 1.8-1.3 0-.8-.8-1.1-2-1.1z"
+      />
+    </Mark>
+  )
+}
+
+export function ClickHouseIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#FFCC00" />
+      <path fill="#111" d="M6 6h2.4v12H6zm4.8 0H13v12h-2.2zm4.8 0H18v12h-2.4z" />
+    </Mark>
+  )
+}
+
+export function SqlIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#336791" />
+      <ellipse cx="12" cy="8" rx="6" ry="2.2" stroke="#fff" strokeWidth="1.4" />
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeWidth="1.4"
+        d="M6 8v8c0 1.2 2.7 2.2 6 2.2s6-1 6-2.2V8"
+      />
+    </Mark>
+  )
+}
+
+export function CronIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#475569" />
+      <circle cx="12" cy="12" r="6.2" stroke="#fff" strokeWidth="1.5" />
+      <path stroke="#fff" strokeWidth="1.5" strokeLinecap="round" d="M12 8.5V12l2.4 1.6" />
+    </Mark>
+  )
+}
+
+export function SupervisorIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#0F766E" />
+      <path
+        fill="#fff"
+        d="M12 7.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm-4.6 9.2c.4-2 2.2-3.2 4.6-3.2s4.2 1.2 4.6 3.2H7.4z"
+      />
+    </Mark>
+  )
+}
+
+export function SentryIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#362D59" />
+      <path fill="#fff" d="M6.4 16.8 12 7.2l5.6 9.6H6.4zm2.6-1.4h6L12 10.4z" />
+    </Mark>
+  )
+}
+
+export function GitIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#F05032" />
+      <path
+        fill="#fff"
+        d="M17.2 11.3 12.7 6.8a1 1 0 0 0-1.4 0l-1 1 1.3 1.3a1.1 1.1 0 0 1 1.4 1.4l1.2 1.2a1.1 1.1 0 1 1-.6.6l-1.1-1.1v3a1.1 1.1 0 1 1-.9 0v-3a1.1 1.1 0 0 1-.6-1.5L8.8 9.1 6.8 11.1a1 1 0 0 0 0 1.4l4.5 4.5a1 1 0 0 0 1.4 0l4.5-4.5a1 1 0 0 0 0-1.4z"
+      />
+    </Mark>
+  )
+}
+
+export function CicdIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#2563EB" />
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        d="M8 10.2A4 4 0 0 1 16 9.4M16 13.8A4 4 0 0 1 8 14.6"
+      />
+      <path fill="#fff" d="m16 6.8 2 2.6H14zm-8 10.4-2-2.6h4z" />
+    </Mark>
+  )
+}
+
+export function RestIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#0EA5E9" />
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        d="M8 9h8M8 12h8M8 15h5"
+      />
+    </Mark>
+  )
+}
+
+export function PostmanIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#FF6C37" />
+      <circle cx="12" cy="12" r="5.2" fill="#fff" />
+      <path fill="#FF6C37" d="M10.2 10.4 16 8.8l-4.2 5.6z" />
+    </Mark>
+  )
+}
+
+export function PhpUnitIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#4F5B93" />
+      <path fill="#fff" d="M7 8h3.2c1.6 0 2.5.8 2.5 2.2S11.8 12.4 10.2 12.4H8.6V16H7zm1.6 1.3v1.8h1.4c.7 0 1.1-.3 1.1-.9s-.4-.9-1.1-.9z" />
+    </Mark>
+  )
+}
+
+export function JestIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#C21325" />
+      <path
+        fill="#fff"
+        d="M12 6.6c2.8 0 5 1.8 5 4.6 0 2.2-1.4 3.7-3.4 4.3l.6 2.9H9.8l.6-2.9C8.4 14.9 7 13.4 7 11.2c0-2.8 2.2-4.6 5-4.6z"
+      />
+    </Mark>
+  )
+}
+
+export function KarmaIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#319C2A" />
+      <path fill="#fff" d="M7.2 16.4 12 7.2l4.8 9.2h-2.2L12 11.2l-2.6 5.2z" />
+    </Mark>
+  )
+}
+
+export function PhpStanIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#1E3A5F" />
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        d="m8 12 2.4 2.4L16 8.8"
+      />
+    </Mark>
+  )
+}
+
+export function RectorIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#7C3AED" />
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        d="M8 15.2 12 8l4 7.2M9.4 12.8h5.2"
+      />
+    </Mark>
+  )
+}
+
+export function CartIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#16A34A" />
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+        d="M6.5 7.5h1.6l1.2 7h7.4l1.6-5.2H9"
+      />
+      <circle cx="10.2" cy="16.8" r="1" fill="#fff" />
+      <circle cx="15.6" cy="16.8" r="1" fill="#fff" />
+    </Mark>
+  )
+}
+
+export function PayIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#1D4ED8" />
+      <rect x="5.5" y="8" width="13" height="8.4" rx="1.4" stroke="#fff" strokeWidth="1.4" />
+      <path stroke="#fff" strokeWidth="1.4" d="M5.5 11h13" />
+    </Mark>
+  )
+}
+
+export function FallbackSkillIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#64748B" />
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        d="m9 9-3 3 3 3M15 9l3 3-3 3"
+      />
+    </Mark>
+  )
+}
+
 export function DockerIcon({ className }: IconProps) {
   return (
     <Mark className={className}>
@@ -274,6 +496,27 @@ const skillIconMap: Record<string, ComponentType<IconProps>> = {
   mongo: MongoIcon,
   awssqs: AwsIcon,
   github: GitHubMark,
+  symfony: SymfonyIcon,
+  clickhouse: ClickHouseIcon,
+  sql: SqlIcon,
+  cron: CronIcon,
+  supervisor: SupervisorIcon,
+  sentry: SentryIcon,
+  git: GitIcon,
+  cicd: CicdIcon,
+  restapis: RestIcon,
+  restapi: RestIcon,
+  postman: PostmanIcon,
+  phpunit: PhpUnitIcon,
+  jest: JestIcon,
+  karma: KarmaIcon,
+  phpstan: PhpStanIcon,
+  rector: RectorIcon,
+  amazonsellingpartnerapi: AwsIcon,
+  amazonadvertisingapi: AwsIcon,
+  amazonadvertising: AwsIcon,
+  api2cart: CartIcon,
+  paymentproviders: PayIcon,
 }
 
 function GitHubMark({ className }: IconProps) {
@@ -290,5 +533,5 @@ function GitHubMark({ className }: IconProps) {
 
 export function skillIconFor(name: string) {
   const key = name.toLowerCase().replace(/[^a-z0-9]/g, '')
-  return skillIconMap[key]
+  return skillIconMap[key] ?? FallbackSkillIcon
 }

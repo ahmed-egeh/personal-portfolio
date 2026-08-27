@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Ahmed Egeh — Full Stack Software Engineer",
+    "title": "Ahmed Egeh - Full Stack Software Engineer",
     "description": "Full-Stack Software Engineer with 4+ years of experience building production SaaS systems."
   },
   "sections": {
@@ -82,13 +82,13 @@
       "location": "Darmstadt, Germany",
       "start": "07/2023",
       "end": "Present",
-      "summary": "Develop and maintain production SaaS systems across the core Laravel/Vue platform, Go and PHP middleware services, internal dashboards, and operational tooling. Work across backend, frontend, integrations, asynchronous processing, data pipelines, and production reliability.",
+      "summary": "I build and run the production SaaS at BidX. Laravel and Vue on the front end, Go and PHP services on the back end, and the dashboards the team uses every day.",
       "highlights": [
-        "Built and improved scheduling automation, including Schedule V1/V2 workflows, queue-based execution, AWS SQS dispatching, worker processing, cron/supervisor configuration, execution windows, logging, and rollout fixes.",
-        "Worked on Amazon Selling Partner API and Amazon Advertising integrations, including order/report ingestion, SKU/product data, total sales, ClickHouse insertion paths, ACOS/sales factor logic, and data quality fixes.",
-        "Delivered internal dashboard and admin tooling for client, agency, DSP, ASIN, profile, notification, scheduling, feature, and support workflows.",
-        "Improved production reliability through error handling, deployment scripts, environment configuration, logging, Sentry-related fixes, PHPStan/Rector cleanup, and production hotfixes.",
-        "Implemented frontend workflow improvements across Vue and Angular, including localization, search, pagination, loaders, forms, previews, and reporting interfaces."
+        "Took scheduling from V1 to V2: SQS-backed queues, workers, cron/supervisor, and a rollout that actually hits the right execution windows.",
+        "Wired Amazon Selling Partner and Advertising into the product: orders, reports, SKUs, and sales landing in ClickHouse, plus ACOS and data-quality fixes.",
+        "Shipped internal admin tools for clients, agencies, ASINs, notifications, scheduling, and support.",
+        "Kept production boring in a good way: clearer errors, deploy/env scripts, Sentry, PHPStan/Rector cleanup, and fast hotfixes when something slipped.",
+        "Tightened Vue and Angular flows: search, pagination, forms, localization, and reporting UI."
       ]
     },
     {
@@ -97,14 +97,14 @@
       "location": "Netherlands (Remote)",
       "start": "03/2022",
       "end": "06/2023",
-      "summary": "Worked on subscription, payment, shopping cart, e-commerce integration, and data security features in a Symfony/Angular-based platform.",
+      "summary": "Remote full-stack work on Cobrowser’s Symfony and Angular product: subscriptions, payments, cart, and keeping customer data locked down. The company was later acquired by Conversation24.",
       "highlights": [
-        "Developed and maintained subscription plans, payment flows, shopping cart features, and payment-link functionality.",
-        "Integrated API2Cart to synchronize external e-commerce systems with the platform.",
-        "Implemented encryption and decryption for sensitive database data using PHP/Symfony and Angular.",
-        "Added product preset functionality for Facebook Catalog and WhatsApp-based customer workflows.",
-        "Wrote and maintained unit and integration tests using PHPUnit, Jest, and Karma.",
-        "Supported production hotfixes and ongoing feature development across frontend and backend areas."
+        "Built subscription plans, checkout, and payment links.",
+        "Connected external shops through API2Cart so catalogs and orders stayed in sync.",
+        "Encrypted sensitive records in PHP/Symfony and surfaced that safely in Angular.",
+        "Added product presets for Facebook Catalog and WhatsApp customer flows.",
+        "Covered the work with PHPUnit, Jest, and Karma tests.",
+        "Jumped on production hotfixes and kept shipping on both sides of the stack."
       ]
     }
   ],
