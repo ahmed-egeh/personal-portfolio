@@ -4,6 +4,23 @@ type IconProps = {
   className?: string
 }
 
+export function PhoneIcon({ className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M6.5 3.5 9 6.2c.4.4.5 1 .2 1.5L8 9.4a14 14 0 0 0 6.6 6.6l1.7-1.2c.5-.3 1.1-.2 1.5.2l2.7 2.5c.5.5.5 1.3 0 1.8l-1.2 1.2c-.6.6-1.5.9-2.4.7C10.4 20.2 3.8 13.6 2.3 7.1c-.2-.9.1-1.8.7-2.4L4.2 3.5c.5-.5 1.3-.5 1.8 0z" />
+    </svg>
+  )
+}
+
 export function EnvelopeIcon({ className }: IconProps) {
   return (
     <svg
@@ -126,6 +143,16 @@ export function DownloadIcon({ className }: IconProps) {
       <path d="M12 4v10" />
       <path d="m8 10 4 4 4-4" />
       <path d="M5 18h14" />
+    </StrokeIcon>
+  )
+}
+
+export function GraduationIcon({ className }: IconProps) {
+  return (
+    <StrokeIcon className={className}>
+      <path d="m3 10 9-5 9 5-9 5-9-5z" />
+      <path d="M7 12.5v4.2c0 .4 2.2 2.3 5 2.3s5-1.9 5-2.3v-4.2" />
+      <path d="M21 10v6" />
     </StrokeIcon>
   )
 }

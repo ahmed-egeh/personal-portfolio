@@ -126,6 +126,113 @@ export function KubernetesIcon({ className }: IconProps) {
   )
 }
 
+export function PhpIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#777BB4" />
+      <path
+        fill="#fff"
+        d="M7.4 14.8c.7 0 1.2-.2 1.6-.5.3-.4.5-.9.3-1.6L8.8 9.2H7.2l.4 2.3H6.4L6 9.2H4.4l.7 4.1c.1.7.5 1.1 1.2 1.4.4.1.8.1 1.1.1zm5.2 0c.7 0 1.3-.2 1.6-.6.4-.4.5-1 .3-1.7l-.5-3.3h-1.6l.4 2.4h-1.2l-.4-2.4H9.6l.7 4.2c.1.7.6 1.2 1.3 1.3.3.1.7.1 1 .1zm5.6 0c.7 0 1.2-.2 1.5-.5.4-.4.5-.9.3-1.6l-.5-3.5h-1.6l.4 2.3h-1.2l-.4-2.3h-1.6l.7 4.1c.1.7.5 1.2 1.2 1.4.4.1.8.1 1.2.1z"
+      />
+    </Mark>
+  )
+}
+
+export function LaravelIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#FF2D20" />
+      <path
+        fill="#fff"
+        d="m6.2 8.4 3.2-1.8 3.2 1.8v3.2l-3.2 1.8-3.2-1.8zm8.4-1.2 3.2 1.8v3.2l-3.2 1.8-1.4-.8V9.4zm-1.6 8.2 3.2 1.8 3.2-1.8V12l-3.2 1.8L13 12z"
+      />
+    </Mark>
+  )
+}
+
+export function VueIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#1A1A1A" />
+      <path fill="#41B883" d="M3.6 5.2h3.6L12 13.2 16.8 5.2h3.6L12 20.4z" />
+      <path fill="#fff" d="M7.2 5.2h3.2L12 8.4l1.6-3.2h3.2L12 13.2z" />
+    </Mark>
+  )
+}
+
+export function AngularIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <path fill="#DD0031" d="M12 2.4 3.8 5.4l1.3 12.2L12 21.6l6.9-4 1.3-12.2z" />
+      <path fill="#fff" d="m12 5.6 4.4 10.2h-1.8l-.9-2.3H10.3l-.9 2.3H7.6zm-.9 6.2h1.8L12 9.2z" />
+    </Mark>
+  )
+}
+
+export function ReactIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#20232A" />
+      <circle cx="12" cy="12" r="1.6" fill="#61DAFB" />
+      <ellipse cx="12" cy="12" rx="8" ry="3.2" stroke="#61DAFB" strokeWidth="1.2" />
+      <ellipse
+        cx="12"
+        cy="12"
+        rx="8"
+        ry="3.2"
+        stroke="#61DAFB"
+        strokeWidth="1.2"
+        transform="rotate(60 12 12)"
+      />
+      <ellipse
+        cx="12"
+        cy="12"
+        rx="8"
+        ry="3.2"
+        stroke="#61DAFB"
+        strokeWidth="1.2"
+        transform="rotate(120 12 12)"
+      />
+    </Mark>
+  )
+}
+
+export function JavaScriptIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#F7DF1E" />
+      <path
+        fill="#111"
+        d="M11 17.6c0 1.6-1 2.5-2.6 2.5-1.4 0-2.3-.7-2.7-1.6l1.5-.9c.2.4.5.8 1.1.8.6 0 1-.2 1-.9v-5.3H11zm3.2 2.5c-1.8 0-3-1-3.5-2.2l1.5-.9c.4.8 1 1.3 1.9 1.3.8 0 1.3-.4 1.3-1 0-.7-.5-1-1.4-1.3l-.5-.2c-1.4-.6-2.4-1.4-2.4-3 0-1.5 1.1-2.6 2.9-2.6 1.3 0 2.2.4 2.9 1.6l-1.4 1c-.3-.6-.8-.9-1.5-.9-.7 0-1.1.4-1.1.9 0 .6.4.9 1.4 1.3l.5.2c1.7.7 2.5 1.6 2.5 3.2 0 1.8-1.4 2.8-3.1 2.8z"
+      />
+    </Mark>
+  )
+}
+
+export function MySqlIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#4479A1" />
+      <path
+        fill="#fff"
+        d="M8.2 15.4c.5.4 1.1.6 2 .6 1.4 0 2.2-.7 2.2-1.8 0-1.2-.8-1.6-2.2-2.1-.9-.3-1.2-.5-1.2-.9s.4-.7 1.1-.7c.7 0 1.2.2 1.6.6l.9-1.1c-.6-.5-1.4-.8-2.5-.8-1.4 0-2.3.8-2.3 1.9 0 1.2.8 1.6 2.3 2.1.8.3 1.1.5 1.1.9 0 .4-.5.8-1.2.8-.8 0-1.5-.3-2-.8zm6.3.5h1.5V9.4h-1.5zm2.7 0h1.5l2.1-6.5h-1.6l-1.2 4.1-1.2-4.1h-1.7z"
+      />
+    </Mark>
+  )
+}
+
+export function MongoIcon({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#13AA52" />
+      <path
+        fill="#fff"
+        d="M12.4 4.2c.2 2.6 1.8 4.2 2.4 5.8.8 2.1.6 3.9-.4 5.2-1.2 1.6-3.2 2.2-3.4 2.2s-2.2-.6-3.4-2.2c-1-1.3-1.2-3.1-.4-5.2.6-1.6 2.2-3.2 2.4-5.8.1 0 .8 2.1 1.4 2.1s1.3-2.1 1.4-2.1z"
+      />
+    </Mark>
+  )
+}
+
 export function DockerIcon({ className }: IconProps) {
   return (
     <Mark className={className}>
@@ -153,6 +260,32 @@ const skillIconMap: Record<string, ComponentType<IconProps>> = {
   kubernetes: KubernetesIcon,
   k8s: KubernetesIcon,
   docker: DockerIcon,
+  php: PhpIcon,
+  laravel: LaravelIcon,
+  vuejs: VueIcon,
+  vue: VueIcon,
+  angular: AngularIcon,
+  react: ReactIcon,
+  javascript: JavaScriptIcon,
+  js: JavaScriptIcon,
+  mysql: MySqlIcon,
+  mariadb: MySqlIcon,
+  mongodb: MongoIcon,
+  mongo: MongoIcon,
+  awssqs: AwsIcon,
+  github: GitHubMark,
+}
+
+function GitHubMark({ className }: IconProps) {
+  return (
+    <Mark className={className}>
+      <rect width="24" height="24" rx="4" fill="#111" />
+      <path
+        fill="#fff"
+        d="M12 5.2a6.8 6.8 0 0 0-2.2 13.3c.3 0 .5-.2.5-.4v-1.3c-1.9.4-2.3-.8-2.3-.8-.3-.7-.7-1-.7-1-.6-.4 0-.4 0-.4.7.1 1 .7 1 .7.6 1 1.6.7 2 .5 0-.4.2-.7.4-.9-1.5-.2-3.1-.8-3.1-3.4 0-.8.3-1.4.7-1.9 0-.2-.3-.8.1-1.8 0 0 .6-.2 1.9.7a6.5 6.5 0 0 1 3.4 0c1.3-.9 1.9-.7 1.9-.7.4 1 .1 1.6.1 1.8.5.5.7 1.1.7 1.9 0 2.6-1.6 3.2-3.1 3.4.2.2.4.6.4 1.2v1.8c0 .2.2.4.5.4A6.8 6.8 0 0 0 12 5.2z"
+      />
+    </Mark>
+  )
 }
 
 export function skillIconFor(name: string) {

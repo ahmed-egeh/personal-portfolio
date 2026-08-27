@@ -1,24 +1,28 @@
 {
   "meta": {
-    "title": "John Doe — Senior Software Engineer",
-    "description": "15+ years building scalable systems and leading engineering teams"
+    "title": "Ahmed Egeh — Full Stack Software Engineer",
+    "description": "Full-Stack Software Engineer with 4+ years of experience building production SaaS systems."
   },
   "sections": {
     "profile": "Profile",
     "skills": "Core Skills",
     "experience": "Experience",
+    "education": "Education",
+    "languages": "Languages",
     "projects": "Personal Projects"
   },
   "profile": {
-    "name": "John Doe",
-    "title": "Senior Software Engineer",
-    "summary": "15+ years building scalable systems and leading engineering teams",
-    "email": "john.doe@example.com",
-    "location": "San Francisco, CA",
+    "name": "Ahmed Egeh",
+    "title": "Full Stack Software Engineer",
+    "summary": "Full-Stack Software Engineer with 4+ years of experience building production SaaS systems",
+    "email": "mrahmedegeh@gmail.com",
+    "phone": "+49 176 70350283",
+    "location": "Darmstadt, Germany",
+    "notes": ["Blue Card holder", "Open to relocation"],
     "avatar": "/avatar.svg",
-    "avatarAlt": "Portrait placeholder for John Doe",
-    "github": "https://github.com/",
-    "linkedin": "https://www.linkedin.com/",
+    "avatarAlt": "Portrait placeholder for Ahmed Egeh",
+    "github": "https://github.com/ahmed-egeh",
+    "linkedin": "https://www.linkedin.com/in/mrahmedegeh",
     "intro": {
       "src": "/media/intro.mp4",
       "label": "Watch My Intro"
@@ -31,46 +35,92 @@
   },
   "skillGroups": [
     {
-      "label": "Languages",
-      "icon": "code",
-      "items": ["TypeScript", "Python", "Go"]
-    },
-    {
       "label": "Backend",
       "icon": "server",
-      "items": ["Node.js", "PostgreSQL", "Redis"]
+      "items": ["PHP", "Laravel", "Symfony", "Go", "Node.js"]
     },
     {
-      "label": "Cloud",
+      "label": "Frontend",
+      "icon": "code",
+      "items": ["Vue.js", "Angular", "React", "JavaScript", "TypeScript"]
+    },
+    {
+      "label": "Databases & Data",
+      "icon": "server",
+      "items": ["MySQL", "MariaDB", "MongoDB", "ClickHouse", "SQL"]
+    },
+    {
+      "label": "Cloud & Operations",
       "icon": "cloud",
-      "items": ["AWS", "Kubernetes", "Docker"]
+      "items": ["AWS SQS", "Docker", "cron", "supervisor", "Sentry"]
+    },
+    {
+      "label": "Integrations",
+      "icon": "layers",
+      "items": [
+        "Amazon Selling Partner API",
+        "Amazon Advertising API",
+        "API2Cart",
+        "payment providers"
+      ]
+    },
+    {
+      "label": "Tools",
+      "icon": "code",
+      "items": ["Git", "GitHub", "CI/CD", "REST APIs", "Postman"]
+    },
+    {
+      "label": "Testing & Quality",
+      "icon": "code",
+      "items": ["PHPUnit", "Jest", "Karma", "PHPStan", "Rector"]
     }
   ],
   "experience": [
     {
-      "role": "Senior Software Engineer",
-      "company": "Tech Corp",
-      "location": "San Francisco, CA",
-      "start": "2020",
+      "role": "Full Stack Software Engineer",
+      "company": "BidX GmbH",
+      "location": "Darmstadt, Germany",
+      "start": "07/2023",
       "end": "Present",
-      "summary": "Led development of microservices architecture, 40% improvement in system performance"
-    },
-    {
-      "role": "Software Engineer",
-      "company": "Innovation Labs",
-      "location": "Austin, TX",
-      "start": "2017",
-      "end": "2020",
-      "summary": "Architected cloud-native applications, mentored junior developers"
+      "summary": "Develop and maintain production SaaS systems across the core Laravel/Vue platform, Go and PHP middleware services, internal dashboards, and operational tooling. Work across backend, frontend, integrations, asynchronous processing, data pipelines, and production reliability.",
+      "highlights": [
+        "Built and improved scheduling automation, including Schedule V1/V2 workflows, queue-based execution, AWS SQS dispatching, worker processing, cron/supervisor configuration, execution windows, logging, and rollout fixes.",
+        "Worked on Amazon Selling Partner API and Amazon Advertising integrations, including order/report ingestion, SKU/product data, total sales, ClickHouse insertion paths, ACOS/sales factor logic, and data quality fixes.",
+        "Delivered internal dashboard and admin tooling for client, agency, DSP, ASIN, profile, notification, scheduling, feature, and support workflows.",
+        "Improved production reliability through error handling, deployment scripts, environment configuration, logging, Sentry-related fixes, PHPStan/Rector cleanup, and production hotfixes.",
+        "Implemented frontend workflow improvements across Vue and Angular, including localization, search, pagination, loaders, forms, previews, and reporting interfaces."
+      ]
     },
     {
       "role": "Full Stack Developer",
-      "company": "StartUp Inc",
-      "location": "New York, NY",
-      "start": "2015",
-      "end": "2017",
-      "summary": "Built scalable web applications using React and Node.js"
+      "company": "Cobrowser (acquired by Conversation24)",
+      "location": "Netherlands (Remote)",
+      "start": "03/2022",
+      "end": "06/2023",
+      "summary": "Worked on subscription, payment, shopping cart, e-commerce integration, and data security features in a Symfony/Angular-based platform.",
+      "highlights": [
+        "Developed and maintained subscription plans, payment flows, shopping cart features, and payment-link functionality.",
+        "Integrated API2Cart to synchronize external e-commerce systems with the platform.",
+        "Implemented encryption and decryption for sensitive database data using PHP/Symfony and Angular.",
+        "Added product preset functionality for Facebook Catalog and WhatsApp-based customer workflows.",
+        "Wrote and maintained unit and integration tests using PHPUnit, Jest, and Karma.",
+        "Supported production hotfixes and ongoing feature development across frontend and backend areas."
+      ]
     }
+  ],
+  "education": [
+    {
+      "degree": "B.S. Information Technology",
+      "school": "Eastern Mediterranean University",
+      "location": "Famagusta, Cyprus",
+      "start": "09/2018",
+      "end": "02/2022",
+      "summary": "Bachelor of Science in Information Technology, graduated with Honors."
+    }
+  ],
+  "languages": [
+    { "name": "English", "level": "C1" },
+    { "name": "German", "level": "A1" }
   ],
   "projects": [
     {

@@ -7,6 +7,7 @@ const skillIcons = {
   code: CodeIcon,
   server: ServerIcon,
   cloud: CloudIcon,
+  layers: LayersIcon,
 } as const
 
 type SkillsProps = {

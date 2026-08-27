@@ -28,6 +28,13 @@ export function Experience({ label, items }: ExperienceProps) {
               {item.location}
             </p>
             <p className="summary">{item.summary}</p>
+            {item.highlights?.length ? (
+              <ul className="job-highlights">
+                {item.highlights.map((highlight) => (
+                  <li key={highlight}>{highlight}</li>
+                ))}
+              </ul>
+            ) : null}
           </li>
         ))}
       </ol>

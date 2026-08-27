@@ -6,6 +6,7 @@ import {
   EnvelopeIcon,
   GitHubIcon,
   LinkedInIcon,
+  PhoneIcon,
   PinIcon,
   VideoIcon,
 } from './Icons'
@@ -133,10 +134,20 @@ export function Profile({ profile }: ProfileProps) {
             <EnvelopeIcon className="icon" />
             {profile.email}
           </a>
+          <a
+            className="contact"
+            href={`tel:${profile.phone.replace(/\s/g, '')}`}
+          >
+            <PhoneIcon className="icon" />
+            {profile.phone}
+          </a>
           <p className="contact location">
             <PinIcon className="icon" />
             {profile.location}
           </p>
+          {profile.notes.length ? (
+            <p className="profile-status">{profile.notes.join(' · ')}</p>
+          ) : null}
           <nav className="socials" aria-label="Social profiles">
             <a
               href={profile.github}

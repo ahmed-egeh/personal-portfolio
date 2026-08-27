@@ -3,7 +3,9 @@ export type Profile = {
   title: string
   summary: string
   email: string
+  phone: string
   location: string
+  notes: string[]
   avatar: string
   avatarAlt: string
   github: string
@@ -21,7 +23,7 @@ export type Profile = {
 
 export type SkillGroup = {
   label: string
-  icon?: 'code' | 'server' | 'cloud'
+  icon?: 'code' | 'server' | 'cloud' | 'layers'
   items: string[]
 }
 
@@ -32,6 +34,21 @@ export type ExperienceItem = {
   start: string
   end: string
   summary: string
+  highlights?: string[]
+}
+
+export type EducationItem = {
+  degree: string
+  school: string
+  location: string
+  start: string
+  end: string
+  summary: string
+}
+
+export type Language = {
+  name: string
+  level: string
 }
 
 export type Project = {
@@ -52,10 +69,14 @@ export type Portfolio = {
     profile: string
     skills: string
     experience: string
+    education: string
+    languages: string
     projects: string
   }
   profile: Profile
   skillGroups: SkillGroup[]
   experience: ExperienceItem[]
+  education: EducationItem[]
+  languages: Language[]
   projects: Project[]
 }
