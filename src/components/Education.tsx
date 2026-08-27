@@ -8,7 +8,7 @@ type EducationProps = {
 
 export function Education({ label, items }: EducationProps) {
   return (
-    <section className="section" aria-labelledby="education-heading">
+    <section id="education" className="section" aria-labelledby="education-heading">
       <h2 id="education-heading">
         <GraduationIcon className="icon" />
         {label}

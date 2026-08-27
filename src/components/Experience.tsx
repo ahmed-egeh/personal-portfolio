@@ -8,7 +8,7 @@ type ExperienceProps = {
 
 export function Experience({ label, items }: ExperienceProps) {
   return (
-    <section className="section" aria-labelledby="experience-heading">
+    <section id="experience" className="section" aria-labelledby="experience-heading">
       <h2 id="experience-heading">
         <BriefcaseIcon className="icon" />
         {label}

@@ -96,7 +96,7 @@ export function Profile({ profile }: ProfileProps) {
   }, [stage])
 
   return (
-    <header className={`section profile is-${stage}`}>
+    <header id="profile" className={`section profile is-${stage}`}>
       <AmbientField />
       <div className="profile-info" aria-hidden={cinema}>
         <img

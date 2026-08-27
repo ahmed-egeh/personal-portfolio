@@ -7,7 +7,7 @@ type LanguagesProps = {
 
 export function Languages({ label, items }: LanguagesProps) {
   return (
-    <section className="section" aria-labelledby="languages-heading">
+    <section id="languages" className="section" aria-labelledby="languages-heading">
       <h2 id="languages-heading">{label}</h2>
       <ul className="chips">
         {items.map((item) => (

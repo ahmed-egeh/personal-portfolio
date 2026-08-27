@@ -4,8 +4,18 @@ import { Experience } from './components/Experience'
 import { Languages } from './components/Languages'
 import { Profile } from './components/Profile'
 import { Projects } from './components/Projects'
+import { SectionNav } from './components/SectionNav'
 import { Skills } from './components/Skills'
 import { portfolio } from './data/loadPortfolio'
+
+const sectionLinks = [
+  { id: 'profile', label: portfolio.sections.profile },
+  { id: 'skills', label: portfolio.sections.skills },
+  { id: 'experience', label: portfolio.sections.experience },
+  { id: 'education', label: portfolio.sections.education },
+  { id: 'languages', label: portfolio.sections.languages },
+  { id: 'projects', label: portfolio.sections.projects },
+]
 
 function App() {
   useEffect(() => {
@@ -24,6 +34,7 @@ function App() {
     <main className="page">
       <Profile profile={portfolio.profile} />
       <div className="content">
+        <SectionNav items={sectionLinks} />
         <Skills
           label={portfolio.sections.skills}
           groups={portfolio.skillGroups}

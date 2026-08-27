@@ -17,7 +17,7 @@ type SkillsProps = {
 
 export function Skills({ label, groups }: SkillsProps) {
   return (
-    <section className="section" aria-labelledby="skills-heading">
+    <section id="skills" className="section" aria-labelledby="skills-heading">
       <h2 id="skills-heading">
         <LayersIcon className="icon" />
         {label}

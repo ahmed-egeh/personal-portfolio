@@ -8,7 +8,7 @@ type ProjectsProps = {
 
 export function Projects({ label, items }: ProjectsProps) {
   return (
-    <section className="section" aria-labelledby="projects-heading">
+    <section id="projects" className="section" aria-labelledby="projects-heading">
       <h2 id="projects-heading">
         <FolderIcon className="icon" />
         {label}
