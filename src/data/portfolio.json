@@ -82,7 +82,7 @@
       "location": "Darmstadt, Germany",
       "start": "07/2023",
       "end": "Present",
-      "summary": "I build and run the production SaaS at BidX. Laravel and Vue on the front end, Go and PHP services on the back end, and the dashboards the team uses every day.",
+      "summary": "I build and run the production SaaS at BidX, working across distributed systems and repositories. Laravel and Vue on the front end, Go and PHP services on the back end, plus internal dashboards so the support team can handle complex operations without friction.",
       "highlights": [
         "Took scheduling from V1 to V2: SQS-backed queues, workers, cron/supervisor, and a rollout that actually hits the right execution windows.",
         "Wired Amazon Selling Partner and Advertising into the product: orders, reports, SKUs, and sales landing in ClickHouse, plus ACOS and data-quality fixes.",
