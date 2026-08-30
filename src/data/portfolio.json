@@ -52,7 +52,7 @@
     {
       "label": "Cloud & Operations",
       "icon": "cloud",
-      "items": ["AWS SQS", "Docker", "cron", "supervisor", "Sentry"]
+      "items": ["AWS SQS", "Docker", "Cron jobs", "supervisors", "Sentry"]
     },
     {
       "label": "Integrations",
