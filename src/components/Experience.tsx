@@ -22,7 +22,19 @@ export function Experience({ label, items }: ExperienceProps) {
                 {item.start} – {item.end}
               </p>
             </div>
-            <p className="company">{item.company}</p>
+            <p className="company">
+              {item.url ? (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.company}
+                </a>
+              ) : (
+                item.company
+              )}
+            </p>
             <p className="job-location">
               <PinIcon className="icon" />
               {item.location}

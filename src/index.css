@@ -832,6 +832,17 @@ h1 {
   font-size: 0.9rem;
 }
 
+.company a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.company a:hover {
+  color: var(--accent);
+}
+
 .job-location {
   display: inline-flex;
   align-items: center;

@@ -30,6 +30,7 @@ export type SkillGroup = {
 export type ExperienceItem = {
   role: string
   company: string
+  url?: string
   location: string
   start: string
   end: string

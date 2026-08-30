@@ -10,8 +10,8 @@ import { portfolio } from './data/loadPortfolio'
 
 const sectionLinks = [
   { id: 'profile', label: portfolio.sections.profile },
-  { id: 'skills', label: portfolio.sections.skills },
   { id: 'experience', label: portfolio.sections.experience },
+  { id: 'skills', label: portfolio.sections.skills },
   { id: 'education', label: portfolio.sections.education },
   { id: 'languages', label: portfolio.sections.languages },
   { id: 'projects', label: portfolio.sections.projects },
@@ -35,13 +35,13 @@ function App() {
       <Profile profile={portfolio.profile} />
       <div className="content">
         <SectionNav items={sectionLinks} />
-        <Skills
-          label={portfolio.sections.skills}
-          groups={portfolio.skillGroups}
-        />
         <Experience
           label={portfolio.sections.experience}
           items={portfolio.experience}
+        />
+        <Skills
+          label={portfolio.sections.skills}
+          groups={portfolio.skillGroups}
         />
         <Education
           label={portfolio.sections.education}
