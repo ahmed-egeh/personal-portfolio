@@ -82,13 +82,13 @@
       "location": "Darmstadt, Germany",
       "start": "07/2023",
       "end": "Present",
-      "summary": "I build and run the production SaaS at BidX, working across distributed systems and repositories. Laravel and Vue on the front end, Go and PHP services on the back end, plus internal dashboards so the support team can handle complex operations without friction.",
+      "summary": "Production SaaS at BidX across distributed systems and repositories: the Laravel and Vue product, Go and PHP middleware, internal dashboards, and the operational tools the team relies on.",
       "highlights": [
-        "Took scheduling from V1 to V2: SQS-backed queues, workers, cron/supervisor, and a rollout that actually hits the right execution windows.",
-        "Wired Amazon Selling Partner and Advertising into the product: orders, reports, SKUs, and sales landing in ClickHouse, plus ACOS and data-quality fixes.",
-        "Shipped internal admin tools for clients, agencies, ASINs, notifications, scheduling, and support.",
-        "Kept production boring in a good way: clearer errors, deploy/env scripts, Sentry, PHPStan/Rector cleanup, and fast hotfixes when something slipped.",
-        "Tightened Vue and Angular flows: search, pagination, forms, localization, and reporting UI."
+        "Rebuilt scheduling as V1 then V2 on queue workers and AWS SQS. Missed executions dropped by 60%, and broken automation setups dropped by 90%.",
+        "Improved Amazon Selling Partner report processing so coverage grew from 3 days to 60 days per client, with reliable handling of up to 4 GB of XML per client.",
+        "Built support and admin tools for feature enablement, manual fixes, and data corrections, so operations move faster and stay more reliable.",
+        "Hardened production with clearer errors, better deploy tooling, monitoring, and static analysis, which cut recurring issues and sped up incident diagnosis.",
+        "Tightened Vue and Angular flows around localization, search, pagination, forms, and reporting so the product feels faster and more dependable."
       ]
     },
     {
@@ -97,14 +97,14 @@
       "location": "Netherlands (Remote)",
       "start": "03/2022",
       "end": "06/2023",
-      "summary": "Remote full-stack work on Cobrowser’s Symfony and Angular product: subscriptions, payments, cart, and keeping customer data locked down. The company was later acquired by Conversation24.",
+      "summary": "Remote work on Cobrowser’s Symfony and Angular platform: subscriptions, payments, cart, shop integrations, and keeping customer data safe. Conversation24 later acquired the company.",
       "highlights": [
-        "Built subscription plans, checkout, and payment links.",
-        "Connected external shops through API2Cart so catalogs and orders stayed in sync.",
-        "Encrypted sensitive records in PHP/Symfony and surfaced that safely in Angular.",
-        "Added product presets for Facebook Catalog and WhatsApp customer flows.",
-        "Covered the work with PHPUnit, Jest, and Karma tests.",
-        "Jumped on production hotfixes and kept shipping on both sides of the stack."
+        "Built and kept subscription plans, payment flows, cart features, and payment links in production.",
+        "Found and fixed a subtle, recurring payment failure that had caused significant time loss and repeated refactoring.",
+        "Added AI-backed live translation for chat operators so they can talk with customers across languages in real time.",
+        "Connected API2Cart so external shops stay in sync with the product.",
+        "Added product presets for Facebook Catalog and WhatsApp customer journeys.",
+        "Wrote and maintained unit and integration tests with PHPUnit, Jest, and Karma."
       ]
     }
   ],
