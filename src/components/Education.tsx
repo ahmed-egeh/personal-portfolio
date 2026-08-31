@@ -22,7 +22,19 @@ export function Education({ label, items }: EducationProps) {
                 {item.start} – {item.end}
               </p>
             </div>
-            <p className="company">{item.school}</p>
+            <p className="company">
+              {item.url ? (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.school}
+                </a>
+              ) : (
+                item.school
+              )}
+            </p>
             <p className="job-location">
               <PinIcon className="icon" />
               {item.location}

@@ -41,6 +41,7 @@ export type ExperienceItem = {
 export type EducationItem = {
   degree: string
   school: string
+  url?: string
   location: string
   start: string
   end: string
