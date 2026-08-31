@@ -99,9 +99,9 @@
       "location": "Netherlands (Remote)",
       "start": "03/2022",
       "end": "06/2023",
-      "summary": "Remote work on Cobrowser’s Symfony and Angular platform: subscriptions, payments, cart, shop integrations, and keeping customer data safe. Conversation24 later acquired the company.",
+      "summary": "Worked on the subscription and payments team at Cobrowser, a Symfony and Angular platform: subscriptions, payments, cart, shop integrations and keeping customer data safe. Conversation24 later acquired the company.",
       "highlights": [
-        "Built and kept subscription plans, payment flows, cart features, and payment links in production.",
+        "Built and kept subscription plans, payment flows and shopping cart features.",
         "Found and fixed a subtle, recurring payment failure that had caused significant time loss and repeated refactoring.",
         "Added AI-backed live translation for chat operators so they can talk with customers across languages in real time.",
         "Connected API2Cart so external shops stay in sync with the product.",
