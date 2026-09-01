@@ -3,7 +3,6 @@ import { Education } from './components/Education'
 import { Experience } from './components/Experience'
 import { Languages } from './components/Languages'
 import { Profile } from './components/Profile'
-import { Projects } from './components/Projects'
 import { SectionNav } from './components/SectionNav'
 import { Skills } from './components/Skills'
 import { portfolio } from './data/loadPortfolio'
@@ -14,7 +13,6 @@ const sectionLinks = [
   { id: 'skills', label: portfolio.sections.skills },
   { id: 'education', label: portfolio.sections.education },
   { id: 'languages', label: portfolio.sections.languages },
-  { id: 'projects', label: portfolio.sections.projects },
 ]
 
 function App() {
@@ -50,10 +48,6 @@ function App() {
         <Languages
           label={portfolio.sections.languages}
           items={portfolio.languages}
-        />
-        <Projects
-          label={portfolio.sections.projects}
-          items={portfolio.projects}
         />
       </div>
     </main>
