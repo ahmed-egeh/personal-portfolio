@@ -6,6 +6,7 @@ import { Profile } from './components/Profile'
 import { SectionNav } from './components/SectionNav'
 import { Skills } from './components/Skills'
 import { portfolio } from './data/loadPortfolio'
+import { applySeo } from './seo'
 
 const sectionLinks = [
   { id: 'profile', label: portfolio.sections.profile },
@@ -17,15 +18,7 @@ const sectionLinks = [
 
 function App() {
   useEffect(() => {
-    document.title = portfolio.meta.title
-
-    let description = document.querySelector('meta[name="description"]')
-    if (!description) {
-      description = document.createElement('meta')
-      description.setAttribute('name', 'description')
-      document.head.append(description)
-    }
-    description.setAttribute('content', portfolio.meta.description)
+    applySeo(portfolio)
   }, [])
 
   return (
