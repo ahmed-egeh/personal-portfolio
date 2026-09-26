@@ -67,6 +67,7 @@ export type Portfolio = {
   meta: {
     title: string
     description: string
+    siteUrl?: string
   }
   sections: {
     profile: string

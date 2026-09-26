@@ -106,6 +106,7 @@ export function Profile({ profile }: ProfileProps) {
             alt={profile.avatarAlt}
             width={184}
             height={184}
+            fetchPriority="high"
           />
         </div>
         <h1>{profile.name}</h1>
@@ -156,7 +157,7 @@ export function Profile({ profile }: ProfileProps) {
             <a
               href={profile.github}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="me noopener noreferrer"
               aria-label="GitHub"
             >
               <GitHubIcon className="icon" />
@@ -164,7 +165,7 @@ export function Profile({ profile }: ProfileProps) {
             <a
               href={profile.linkedin}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="me noopener noreferrer"
               aria-label="LinkedIn"
             >
               <LinkedInIcon className="icon" />
