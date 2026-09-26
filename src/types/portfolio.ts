@@ -68,6 +68,7 @@ export type Portfolio = {
     title: string
     description: string
     siteUrl?: string
+    ogImage?: string
   }
   sections: {
     profile: string

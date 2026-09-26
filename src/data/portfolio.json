@@ -2,7 +2,8 @@
   "meta": {
     "title": "Ahmed Egeh | Full Stack Software Engineer in Darmstadt",
     "description": "Ahmed Egeh is a Full Stack Software Engineer in Darmstadt, Germany, with 4+ years building production SaaS in Laravel, Vue, Go, PHP, and AWS. Open to relocation.",
-    "siteUrl": ""
+    "siteUrl": "",
+    "ogImage": "/page-screenshot.png"
   },
   "sections": {
     "profile": "Profile",

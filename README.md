@@ -29,6 +29,7 @@ Almost all copy lives in [`src/data/portfolio.json`](src/data/portfolio.json). C
 | --- | --- |
 | `meta.title` / `meta.description` | Browser tab, search snippet, Open Graph / Twitter cards |
 | `meta.siteUrl` | Canonical URL and absolute social-preview images. Set this after deploy (example: `https://your-domain.com/`) |
+| `meta.ogImage` | Link-preview thumbnail (`/page-screenshot.png`) |
 | `profile` | Name, title, summary, photo, email, phone, location, GitHub, LinkedIn, resume |
 | `profile.intro` | Intro clip. Keep `"hidden": true` to hide Play introduction |
 | `profile.cv` | Resume file in `public/`, button label, download filename |
@@ -43,6 +44,7 @@ Almost all copy lives in [`src/data/portfolio.json`](src/data/portfolio.json). C
 Put files in `public/` and point JSON at the public path:
 
 - Photo: `public/myPhoto2.jpeg` → `profile.avatar` `/myPhoto2.jpeg` and `profile.avatarAlt`
+- Link preview: `public/page-screenshot.png` → `meta.ogImage` `/page-screenshot.png`
 - Resume: `public/Ahmed_Egeh_resume.pdf` → `profile.cv`
 - Intro (optional): `public/media/intro.mp4` → `profile.intro.src`. Set `profile.intro.hidden` to `false` to show the button
 

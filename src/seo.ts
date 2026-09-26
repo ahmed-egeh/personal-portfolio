@@ -31,7 +31,8 @@ function absoluteUrl(siteUrl: string | undefined, path: string) {
 export function applySeo(portfolio: Portfolio) {
   const { meta, profile, skillGroups, experience, education, languages } = portfolio
   const siteUrl = meta.siteUrl?.trim()
-  const image = absoluteUrl(siteUrl, profile.avatar)
+  const preview = absoluteUrl(siteUrl, meta.ogImage || profile.avatar)
+  const portrait = absoluteUrl(siteUrl, profile.avatar)
   const pageUrl = siteUrl || undefined
 
   document.title = meta.title
@@ -42,13 +43,17 @@ export function applySeo(portfolio: Portfolio) {
   upsertMeta('property', 'og:description', meta.description)
   upsertMeta('property', 'og:type', 'profile')
   upsertMeta('property', 'og:locale', 'en_US')
-  upsertMeta('property', 'og:image', image)
+  upsertMeta('property', 'og:image', preview)
+  upsertMeta('property', 'og:image:type', 'image/png')
+  upsertMeta('property', 'og:image:width', '1919')
+  upsertMeta('property', 'og:image:height', '960')
+  upsertMeta('property', 'og:image:alt', `${profile.name} portfolio`)
   upsertMeta('property', 'profile:first_name', profile.name.split(' ')[0] ?? profile.name)
   upsertMeta('property', 'profile:last_name', profile.name.split(' ').slice(1).join(' '))
   upsertMeta('name', 'twitter:card', 'summary_large_image')
   upsertMeta('name', 'twitter:title', meta.title)
   upsertMeta('name', 'twitter:description', meta.description)
-  upsertMeta('name', 'twitter:image', image)
+  upsertMeta('name', 'twitter:image', preview)
 
   if (pageUrl) {
     upsertMeta('property', 'og:url', pageUrl)
@@ -64,7 +69,7 @@ export function applySeo(portfolio: Portfolio) {
     description: profile.summary,
     email: `mailto:${profile.email}`,
     telephone: profile.phone.replace(/\s/g, ''),
-    image,
+    image: portrait,
     address: {
       '@type': 'PostalAddress',
       addressLocality: profile.location.replace(/,.*$/, ''),
