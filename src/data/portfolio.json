@@ -25,7 +25,8 @@
     "linkedin": "https://www.linkedin.com/in/mrahmedegeh",
     "intro": {
       "src": "/media/intro.mp4",
-      "label": "Play introduction"
+      "label": "Play introduction",
+      "hidden": true
     },
     "cv": {
       "src": "/Ahmed_Egeh_resume.pdf",

@@ -256,6 +256,10 @@ a:focus-visible {
   margin: 22px auto 0;
 }
 
+.profile-actions:has(> :only-child) {
+  grid-template-columns: 1fr;
+}
+
 .watch-btn,
 .cv-btn {
   display: inline-flex;

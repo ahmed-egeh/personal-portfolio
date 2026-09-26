@@ -113,14 +113,16 @@ export function Profile({ profile }: ProfileProps) {
         <p className="summary">{profile.summary}</p>
         {stage === 'idle' ? (
           <div className="profile-actions">
-            <button
-              type="button"
-              className="watch-btn"
-              onClick={() => setStage('leaving-info')}
-            >
-              <VideoIcon className="icon" />
-              {profile.intro.label}
-            </button>
+            {profile.intro.hidden ? null : (
+              <button
+                type="button"
+                className="watch-btn"
+                onClick={() => setStage('leaving-info')}
+              >
+                <VideoIcon className="icon" />
+                {profile.intro.label}
+              </button>
+            )}
             <a
               className="cv-btn"
               href={profile.cv.src}
@@ -171,7 +173,7 @@ export function Profile({ profile }: ProfileProps) {
         </div>
       </div>
 
-      {showStage ? (
+      {showStage && !profile.intro.hidden ? (
         <div className="intro-stage" aria-live="polite">
           <video
             ref={videoRef}

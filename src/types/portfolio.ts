@@ -13,6 +13,7 @@ export type Profile = {
   intro: {
     src: string
     label: string
+    hidden?: boolean
   }
   cv: {
     src: string
