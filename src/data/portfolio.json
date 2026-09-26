@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "Ahmed Egeh - Full Stack Software Engineer",
+    "description": "Full-Stack Software Engineer with 4+ years of experience building production SaaS systems."
+  },
+  "sections": {
+    "profile": "Profile",
+    "skills": "Core Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "languages": "Languages",
+    "projects": "Personal Projects"
+  },
+  "profile": {
+    "name": "Ahmed Egeh",
+    "title": "Full Stack Software Engineer",
+    "summary": "Full-Stack Software Engineer with 4+ years of experience building production SaaS systems",
+    "email": "mrahmedegeh@gmail.com",
+    "phone": "+49 176 70350283",
+    "location": "Darmstadt, Germany",
+    "notes": ["Blue Card holder", "Open to relocation"],
+    "avatar": "/myPhoto2.jpeg",
+    "avatarAlt": "Portrait of Ahmed Egeh",
+    "github": "https://github.com/ahmed-egeh",
+    "linkedin": "https://www.linkedin.com/in/mrahmedegeh",
+    "intro": {
+      "src": "/media/intro.mp4",
+      "label": "Play introduction",
+      "hidden": true
+    },
+    "cv": {
+      "src": "/Ahmed_Egeh_resume.pdf",
+      "label": "Download resume",
+      "filename": "Ahmed_Egeh_resume.pdf"
+    }
+  },
+  "skillGroups": [
+    {
+      "label": "Backend",
+      "icon": "server",
+      "items": ["PHP", "Laravel", "Symfony", "Go", "Node.js"]
+    },
+    {
+      "label": "Frontend",
+      "icon": "code",
+      "items": ["Vue.js", "Angular", "React", "JavaScript", "TypeScript"]
+    },
+    {
+      "label": "Databases & Data",
+      "icon": "server",
+      "items": ["MySQL", "MariaDB", "MongoDB", "ClickHouse", "SQL"]
+    },
+    {
+      "label": "Cloud & Operations",
+      "icon": "cloud",
+      "items": ["AWS SQS", "Docker", "Cron jobs", "supervisors", "Sentry"]
+    },
+    {
+      "label": "Integrations",
+      "icon": "layers",
+      "items": [
+        "Amazon Selling Partner API",
+        "Amazon Advertising API",
+        "API2Cart",
+        "payment providers"
+      ]
+    },
+    {
+      "label": "Tools",
+      "icon": "code",
+      "items": ["Git", "GitHub", "CI/CD", "REST APIs", "Postman"]
+    },
+    {
+      "label": "Testing & Quality",
+      "icon": "code",
+      "items": ["PHPUnit", "Jest", "Karma", "PHPStan", "Rector"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Full Stack Software Engineer",
+      "company": "BidX GmbH",
+      "url": "https://www.bidx.io/",
+      "location": "Darmstadt, Germany",
+      "start": "07/2023",
+      "end": "Present",
+      "summary": "Production SaaS at BidX across distributed systems and repositories: the Laravel and Vue product, Go and PHP middleware, internal dashboards, and the operational tools the team relies on.",
+      "highlights": [
+        "Rebuilt scheduling as V1 then V2 on queue workers and AWS SQS. Missed executions dropped by 60%, and broken automation setups dropped by 90%.",
+        "Improved Amazon Selling Partner report processing so coverage grew from 3 days to 60 days per client, with reliable handling of up to 4 GB of XML per client.",
+        "Built support and admin tools for feature enablement, manual fixes, and data corrections, so operations move faster and stay more reliable.",
+        "Hardened production with clearer errors, better deploy tooling, monitoring, and static analysis, which cut recurring issues and sped up incident diagnosis.",
+        "Tightened Vue and Angular flows around localization, search, pagination, forms, and reporting so the product feels faster and more dependable."
+      ]
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Cobrowser (acquired by Conversation24)",
+      "url": "https://conversation24.com/",
+      "location": "Netherlands (Remote)",
+      "start": "03/2022",
+      "end": "06/2023",
+      "summary": "Worked on the subscription and payments team at Cobrowser, a Symfony and Angular platform: subscriptions, payments, cart, shop integrations and keeping customer data safe. Conversation24 later acquired the company.",
+      "highlights": [
+        "Built and kept subscription plans, payment flows and shopping cart features.",
+        "Found and fixed a subtle, recurring payment failure that had caused significant time loss and repeated refactoring.",
+        "Added AI-backed live translation for chat operators so they can talk with customers across languages in real time.",
+        "Connected API2Cart so external shops stay in sync with the product.",
+        "Added product presets for Facebook Catalog and WhatsApp customer journeys.",
+        "Wrote and maintained unit and integration tests with PHPUnit, Jest, and Karma."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. Information Technology",
+      "school": "Eastern Mediterranean University",
+      "url": "https://www.emu.edu.tr/",
+      "location": "Famagusta, Cyprus",
+      "start": "09/2018",
+      "end": "02/2022",
+      "summary": "Bachelor of Science in Information Technology, graduated with Honors."
+    }
+  ],
+  "languages": [
+    { "name": "English", "level": "C1" },
+    { "name": "German", "level": "A1" }
+  ],
+  "projects": [
+    {
+      "title": "Atlas API",
+      "description": "A small service for exploring public datasets with cached queries and a clean REST surface.",
+      "image": "/projects/atlas.svg",
+      "imageAlt": "Atlas API project preview",
+      "stack": ["TypeScript", "Node.js", "PostgreSQL"],
+      "github": "https://github.com/"
+    },
+    {
+      "title": "Harbor UI",
+      "description": "Component kit and dashboard shell used to prototype internal tools without starting from zero.",
+      "image": "/projects/harbor.svg",
+      "imageAlt": "Harbor UI project preview",
+      "stack": ["React", "TypeScript", "Vite"],
+      "github": "https://github.com/"
+    }
+  ]
+}
